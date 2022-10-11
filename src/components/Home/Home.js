@@ -33,7 +33,7 @@ const Home = () => {
                </div>
 
 
-              <div className=' lg:grid-cols-2  w-[900px] sm:grid grid-cols-1  my-5 lg:mx-80 gap-4 px-20  sm:max-w-xl md:max-w-full  md:px-24 lg:px-8'>
+              <div className=' lg:grid-cols-2  lg:w-[900px] sm:grid grid-cols-1  my-5 lg:mx-80 gap-4 lg:px-20  sm:max-w-xl sm:ml-5 md:max-w-full  md:px-24 '>
               {
               quizTopics.map(quiz=> <Quiz
                 key={quiz.id}

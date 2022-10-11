@@ -4,18 +4,20 @@ import { ToastContainer, toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
 
 const Question = (props) => {
+
     const{question}= props.question;
   const options=  props.question.options;
+   const ans=props.question.id;
 
 
-
-  
-  const notify = () => toast("Wow so easy!");
+  const notify = () =>{
+    toast(props.question.correctAnswer);
+  } 
 
 
 
     return (
-        <div className='border-4 w-2/4 mx-auto mb-5 my-10'>
+        <div className='border-4 lg:w-2/4  lg:mx-auto mb-5 my-10'>
            
             <div className='flex justify-between'>
 
@@ -24,11 +26,12 @@ const Question = (props) => {
              </h1>
 
             <h2 className='mt-5 mr-5'>
-            <button onClick={notify}>View!</button>
+
+
+            <button onClick={()=>notify(ans)}>View!</button>
         <ToastContainer /></h2>
             </div>
-
-            <div className='grid grid-cols-2 py-4'>
+            <div className='lg:grid-cols-2 sm:grid grid-cols-1  py-4'>
                 {
                     options.map(option=> <Option option={option}></Option>)
                 }
