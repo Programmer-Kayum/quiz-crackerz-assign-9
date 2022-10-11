@@ -7,7 +7,7 @@ const Quiz = ({quiz}) => {
 const {logo, name,total,id}= quiz;
 
     return (
-        <div className='h-[355px] w-[320px] border-4 rounded-lg static bg-gray-400'>
+        <div className='h-[355px] lg:w-[320px] border-4 sm:mx-auto rounded-lg static bg-gray-400'>
             <img className='h-[300px] p-5 mx-auto ' src={logo} alt="" />
             <div className='flex justify-between bg-blue-400'>
                 <div className='flex justify-between'>

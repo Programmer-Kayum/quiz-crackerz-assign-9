@@ -4,30 +4,17 @@ import { ToastContainer, toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
 
 const Question = (props) => {
-
           const{question}= props.question;
           const options=  props.question.options;
          const ans=props.question.id;
-
-
-  const notify = () =>{
-    toast(props.question.correctAnswer);
+        const notify = () =>{
+         toast(props.question.correctAnswer);
   } 
-
-
-
     return (
         <div className='border-4 lg:w-2/4  lg:mx-auto mb-5 my-10'>
-           
             <div className='flex justify-between'>
-
-            <h1 className='text-2xl py-4 mr-5'> 
-             {question}
-             </h1>
-
+            <h1 className='text-2xl py-4 mr-5'>{question}</h1>
             <h2 className='mt-5 mr-5'>
-
-
             <button onClick={()=>notify(ans)}>View!</button>
         <ToastContainer /></h2>
             </div>
@@ -38,11 +25,6 @@ const Question = (props) => {
                     ></Option>)
                 }
             </div>
-
-
-
-
-
         </div>
     );
 };
