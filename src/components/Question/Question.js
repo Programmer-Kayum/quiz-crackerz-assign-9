@@ -5,9 +5,9 @@ import { ToastContainer, toast } from 'react-toastify';
 
 const Question = (props) => {
 
-    const{question}= props.question;
-  const options=  props.question.options;
-   const ans=props.question.id;
+          const{question}= props.question;
+          const options=  props.question.options;
+         const ans=props.question.id;
 
 
   const notify = () =>{
@@ -33,7 +33,9 @@ const Question = (props) => {
             </div>
             <div className='lg:grid-cols-2 sm:grid grid-cols-1  py-4'>
                 {
-                    options.map(option=> <Option option={option}></Option>)
+                    options.map(option=> <Option option={option}
+                        question={props}
+                    ></Option>)
                 }
             </div>
 
