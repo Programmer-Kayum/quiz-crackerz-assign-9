@@ -25,7 +25,7 @@ const Home = () => {
                </div>
                </div>
                
-                <div className='w-full lg:w-2/4  sm:mt-0 lg:ml-auto h-56'>
+                <div className='w-full lg:w-2/4  sm:mt-0 lg:ml-auto sm:h-56'>
                     <img className='lg:h-60  lg:w-full' src={img1} alt="" />
                 </div>
             
