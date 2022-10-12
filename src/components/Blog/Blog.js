@@ -3,8 +3,8 @@ import React from 'react';
 
 const Blog = () => {
     return (
-        <div>
-          <div className='border-4 rounded-lg bg-gray-400 p-10 w-2/4 mx-auto'>
+        <div className='p-5 pb-20 bg-zinc-700'>
+          <div className='border-4 rounded-lg bg-gray-400 p-10   lg:w-2/4 mx-auto mb-5'>
             <h2 className='text=4xl font-bold pb-4'>
                Q-1 : What is the purpose of React Router</h2>
             <hr />
@@ -13,7 +13,7 @@ const Blog = () => {
             </p>
           </div>
 
-          <div className='border-4 rounded-lg bg-gray-400 p-10 w-2/4 mx-auto'>
+          <div className='border-4 rounded-lg bg-gray-400 p-10 lg:w-2/4 mx-auto mb-5'>
             <h2 className='text=4xl font-bold pb-4'>
                Q-2 : How does context api work?</h2>
             <hr />
@@ -22,7 +22,7 @@ const Blog = () => {
             </p>
           </div>
 
-          <div className='border-4 rounded-lg bg-gray-400 p-10 w-2/4 mx-auto'>
+          <div className='border-4 rounded-lg bg-gray-400 p-10 lg:w-2/4 mx-auto'>
             <h2 className='text=4xl font-bold pb-4'>
                Q-3 : What is  useHref()</h2>
             <hr />
