@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import { Bar, BarChart, Tooltip, XAxis, YAxis } from 'recharts';
+import { Bar, BarChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 
 const Statistics = () => {
     const [quizData, setQuizData] = useState([]);
@@ -9,30 +9,27 @@ const Statistics = () => {
             .then(data => {
                 const loadedData = data.data.data;
                 const singleData = loadedData.map(data => {
-                    const parts = {
+                const parts = {
                         total:data.total,
                         name:data.name
                     }
-
-                    console.log(parts);
-                         return parts;
+                return parts;
                 });
-                setQuizData(singleData);
-                
+                setQuizData(singleData); 
             })
-
-            // console.log(phones);
-    }, [])
+    }, []);
     return (
-       <div className='bg-gray-500 py-20'>
-         <div className='w-2/4 mx-auto py-20 bg-orange-400'>
-            <BarChart width={500} height={400} data={quizData}>
+        <div className='bg-gray-400 py-20'>
+          <div className=' lg:w-2/4 lg:mx-auto bg-orange-400'>
+            <ResponsiveContainer width="90%" height={400}>
+            <BarChart width={200} height={400} data={quizData}>
             <Bar dataKey="total" fill="#8884d8" />
             <XAxis dataKey="name"></XAxis>
             <Tooltip />
             <YAxis></YAxis>
-        </BarChart>
-        </div>
+            </BarChart>
+            </ResponsiveContainer>
+         </div>
        </div>
     );
 };
