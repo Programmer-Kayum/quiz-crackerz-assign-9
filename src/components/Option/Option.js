@@ -13,9 +13,12 @@ const Option = ({option,question}) => {
                 }
       } 
     return (
-           <div className='border-2 rounded-lg p-3 m-3  bg-white text-black'>
-                    <li onClick={()=>notify(option)}>{option} </li><ToastContainer />
-           </div> 
+           
+            <div onClick={()=>notify(option)} className='border-1 rounded-md hover:bg-blue-400 p-3 m-3  bg-white text-black'>
+                    <p>{option} </p>
+                    <ToastContainer />
+           </div>
+          
     );
 };
 

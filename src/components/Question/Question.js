@@ -13,7 +13,7 @@ const Question = (props) => {
   } 
     return (
        
-         <div className='border-4 lg:w-2/4 p-5 lg:mx-auto mb-5 my-10 bg-gray-400'>
+         <div className='border-2 lg:w-2/4 p-5 lg:mx-auto mb-5 my-10 bg-gray-400'>
                 <div className='flex justify-between'>
                  <h1 className='text-2xl py-4 mr-5'>
                   <span className='font-bold '>Quiz:</span> {question}
