@@ -16,7 +16,7 @@ const Home = () => {
               <div className='mb-10 lg:max-w-lg  lg:pr-5 lg:mb-0'>
               <div className='max-w-xl lg:mb-6  mt-5 '>
                 
-                    <h2 className='max-w-lg mb-6 font-sans lg:text-4xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none ml-20'>
+                    <h2 className='max-w-lg mb-6 font-sans lg:text-4xl font-bold tracking-tight text-gray-900 text-4xl sm:leading-none ml-20'>
                     Test <br className='hidden md:block' /><span className='text-orange-400'>Your</span> <span className='inline-block text-blue-400'>Talent</span>
                     </h2>
                     <h3 className='md:text-lg lg:text-3xl ml-10 font-bold'>
@@ -24,11 +24,11 @@ const Home = () => {
                     </h3>
                </div>
                </div>
-                {/* <div className='lg:w-1/2 '> */}
+               
                 <div className='w-full lg:w-2/4  sm:mt-0 lg:ml-auto h-56'>
                     <img className='lg:h-60  lg:w-full' src={img1} alt="" />
                 </div>
-                {/* </div> */}
+            
               </div>
                </div>
 
