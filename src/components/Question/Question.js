@@ -2,6 +2,7 @@ import React from 'react';
 import Option from '../Option/Option';
 import { ToastContainer, toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
+  import {EyeIcon} from '@heroicons/react/24/solid'
 
 const Question = (props) => {
           const{question}= props.question;
@@ -20,8 +21,10 @@ const Question = (props) => {
 
 
             <h2 className='mt-5 mr-5'>
-            <button onClick={()=>notify(ans)}>View!</button>
-        <ToastContainer /></h2>
+
+            <EyeIcon onClick={()=>notify(ans)} className="h-10 w-10 text-orange-500"/> <ToastContainer />
+      </h2>
+
             </div>
             <div className='lg:grid-cols-2 sm:grid grid-cols-1  py-4'>
                 {
