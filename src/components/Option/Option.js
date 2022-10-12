@@ -13,7 +13,7 @@ const Option = ({option,question}) => {
                 }
       } 
     return (
-           <div className='border-2 rounded-lg p-3 m-3'>
+           <div className='border-2 rounded-lg p-3 m-3  bg-white text-black'>
                     <li onClick={()=>notify(option)}>{option} </li><ToastContainer />
            </div> 
     );

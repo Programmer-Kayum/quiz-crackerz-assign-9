@@ -11,9 +11,14 @@ const Question = (props) => {
          toast(props.question.correctAnswer);
   } 
     return (
-        <div className='border-4 lg:w-2/4  lg:mx-auto mb-5 my-10'>
-            <div className='flex justify-between'>
-            <h1 className='text-2xl py-4 mr-5'>{question}</h1>
+       
+         <div className='border-4 lg:w-2/4 p-5 lg:mx-auto mb-5 my-10 bg-gray-400'>
+                <div className='flex justify-between'>
+                 <h1 className='text-2xl py-4 mr-5'>
+                  <span className='font-bold '>Quiz:</span> {question}
+                 </h1>
+
+
             <h2 className='mt-5 mr-5'>
             <button onClick={()=>notify(ans)}>View!</button>
         <ToastContainer /></h2>
@@ -26,6 +31,7 @@ const Question = (props) => {
                 }
             </div>
         </div>
+   
     );
 };
 

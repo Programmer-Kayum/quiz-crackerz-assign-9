@@ -6,7 +6,7 @@ const QuizContainer = () => {
    const quizeIteams= useLoaderData();
    const quizs= quizeIteams.data.questions;
     return (
-        <div>
+        <div className='bg-gray-600 py-20'> 
           {
             quizs.map(quiz=> <Question
             key={quiz.id}
